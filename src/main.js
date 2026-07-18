@@ -5,7 +5,7 @@ document.querySelector('#app').innerHTML = `
 
     <video id="video-player" playsinline></video>
 
-    <input
+    <input!
         id="video-upload"
         type="file"
         accept="video/*"
