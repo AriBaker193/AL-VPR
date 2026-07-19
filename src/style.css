@@ -96,13 +96,19 @@ body,
   position:absolute;
 
   left:50%;
-  bottom:28px;
+  bottom:20px;
 
   transform:translateX(-50%);
 
   display:flex;
 
-  gap:12px;
+  gap:6px;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  width:95%;
 
   z-index:100;
 
@@ -112,28 +118,21 @@ button{
 
   border:none;
 
-  padding:12px 18px;
+  padding:8px 10px;
 
-  border-radius:12px;
+  border-radius:10px;
 
-  font-size:17px;
+  font-size:14px;
 
   cursor:pointer;
 
-  background:rgba(255,255,255,.60);
+  background:rgba(255,255,255,.65);
 
   color:black;
 
   transition:.15s;
 
 }
-
-button:hover{
-
-  background:rgba(255,255,255,.80);
-
-}
-
 /* -----------------------
  PLAY ICON
 ------------------------ */
@@ -172,16 +171,17 @@ button:hover{
 }
 
 
-#timeline-container {
+#timeline-container{
 
-  position: absolute;
+  position:absolute;
 
-  left: 10%;
-  right: 10%;
+  left:6%;
 
-  bottom: 100px;
+  right:6%;
 
-  z-index: 100;
+  bottom:75px;
+
+  z-index:100;
 
 }
 
@@ -234,5 +234,85 @@ button:hover{
   opacity:.7;
 
   margin-bottom:5px;
+
+}
+
+@media (max-width: 700px){
+
+  #controls{
+
+    position:absolute;
+  
+    left:50%;
+  
+    bottom:18px;
+  
+    transform:translateX(-50%);
+  
+    width:95%;
+  
+    display:flex;
+  
+    flex-direction:column;
+  
+    gap:8px;
+  
+    z-index:100;
+  
+  }
+  
+  .control-row{
+  
+    display:flex;
+  
+    justify-content:center;
+  
+    gap:8px;
+  
+  }
+  
+  button{
+  
+    border:none;
+  
+    padding:8px 12px;
+  
+    border-radius:10px;
+  
+    font-size:14px;
+  
+    background:rgba(255,255,255,.65);
+  
+    cursor:pointer;
+  
+  }
+
+  button{
+
+    padding:6px 8px;
+
+    font-size:12px;
+
+  }
+
+  #timeline-container{
+
+    position:absolute;
+  
+    left:5%;
+  
+    right:5%;
+  
+    bottom:100px;
+  
+    z-index:100;
+  
+  }
+
+  #play-overlay{
+
+    font-size:52px;
+
+  }
 
 }

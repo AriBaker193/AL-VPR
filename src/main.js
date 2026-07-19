@@ -5,7 +5,7 @@ document.querySelector('#app').innerHTML = `
 
     <video id="video-player" playsinline></video>
 
-    <input!!!!!!!
+    <input
         id="video-upload"
         type="file"
         accept="video/*"
@@ -43,21 +43,29 @@ document.querySelector('#app').innerHTML = `
 </div>
 
 
-    <div id="controls">
+<div id="controls">
 
-        <button id="upload-button">Upload</button>
+<div class="control-row">
 
-        <button id="frame-back">◀ Frame</button>
+    <button id="frame-back">◀ Frame</button>
 
-        <button id="play-button">▶</button>
+    <button id="play-button">▶</button>
 
-        <button id="frame-forward">Frame ▶</button>
+    <button id="frame-forward">Frame ▶</button>
 
-        <button id="speed-button">1x</button>
+</div>
 
-        <button id="fullscreen-button">⛶</button>
+<div class="control-row">
 
-    </div>
+    <button id="upload-button">Upload</button>
+
+    <button id="speed-button">1x</button>
+
+    <button id="fullscreen-button">⛶</button>
+
+</div>
+
+</div>
 
 
     <div id="play-overlay">▶</div>
